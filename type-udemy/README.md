@@ -65,3 +65,12 @@ tsc index.ts
 ```bash
 tsc --init
 ```
+* Após fazermos isso vai ser gerado um arquivo chamado "tsconfig.json", nele vamos poder fazer algumas alterações.
+
+## alterações feitas no tsconfig.json ##
+
+* "target": "es2016",
+* "module": "ESNext",
+
+* "outDir": "./dist", 
+=> essa alteração é importante, separamos nossos arquivos .ts dos .js, colocamos os .ts dentro da pasta src e as do .js dentro da pasta dist (que vao ser enviadas futuramente para um github) essa alteração que fizemos é justamente para que sempre que for compilado um arquivo .js seja encaminhado para essa pasta.
