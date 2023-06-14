@@ -55,6 +55,12 @@ npm install -g typescript
 ```bash
 tsc index.ts
 ```
+* Apos as configurações do arquivo do tsconfig no terminal vamos compilar comente usando o: 
+
+@exemplo
+```bash
+tsc
+```
 * Apos isso vai ser criado um arquivo index.js com a versao do nosso codigo em javascript ES5.
 
 # Configurando o arquivo TS #
@@ -111,4 +117,10 @@ const listaTuplas: [number, string][] = [
   [1, 'Alexandre'],
   [2, 'felipe'],
 ]
+
+// Intersections 
+
+const productId: string | number | boolean = false
+
+
 ```
