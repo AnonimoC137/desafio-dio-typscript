@@ -143,3 +143,22 @@ ou
 let itemId = <string>productName; 
 
 ```
+
+# Uso de Functions #
+
+* Dentro de nossas funções podemos definir os tipos que seram nossos parametros, assim como podemos definir qual o tipo do retorno que vamos receber, podemos tambem passar metodos dentro para manipular os dados como o .toString() assim modificando um number para string.
+
+@exemplo
+```bash
+const sum = (x: number, y: number): number | string => {
+    return (x + y).toString()
+}
+```
+* Outro exemplo é o "void" quando a function não retorna nada o tipo do retorno é void(vazio)
+
+@exemplo
+```bash
+const log = (message: string): void  => {
+    console.log(message)
+}
+```
