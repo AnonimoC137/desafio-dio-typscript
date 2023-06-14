@@ -123,4 +123,23 @@ const listaTuplas: [number, string][] = [
 const productId: string | number | boolean = false
 
 
+//Enum
+
+enum Direction {
+  Up = 1,
+  down = 2,
+}
+
+const direction = Direction.up
+console.log(direction)
+
+// Type Assertions 
+const productName: any = 'bone';
+
+let itemId = productName as string;
+
+ou
+
+let itemId = <string>productName; 
+
 ```
