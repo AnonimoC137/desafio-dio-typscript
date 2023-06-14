@@ -74,3 +74,12 @@ tsc --init
 
 * "outDir": "./dist", 
 => essa alteração é importante, separamos nossos arquivos .ts dos .js, colocamos os .ts dentro da pasta src e as do .js dentro da pasta dist (que vao ser enviadas futuramente para um github) essa alteração que fizemos é justamente para que sempre que for compilado um arquivo .js seja encaminhado para essa pasta.
+
+* "rootDir": "./src", => essa alteração é a mesma coisa que fizemos para os arquivos gerados com .js só de dessa vez é para os arquivos typescript.
+
+* Precisamos do comando no terminal "tsc" para que essas mudanças aconteçam
+
+@exemplo
+```bash
+tsc
+```
