@@ -83,3 +83,32 @@ tsc --init
 ```bash
 tsc
 ```
+
+# Tipos basicos #
+
+* Agora vou mostrar alguns tipos basicos no typescript.
+
+@exemplo
+```bash
+let age: number = 5;
+const firstName = 'Alexandre';
+const isValid: boolean = true;
+let idk: any = 5;
+
+idk = '12';
+idk = true;
+
+const ids: number[] = [1, 2, 3, 4, 5]
+const booleans: boolean[] = [true, false, true, false]
+const names: string[] = ['felipe', 'alexandre']
+
+//tupla
+const person: [number, string] = [1, 'Alexandre'];
+
+// Lista de tuplas
+
+const listaTuplas: [number, string][] = [
+  [1, 'Alexandre'],
+  [2, 'felipe'],
+]
+```
