@@ -50,7 +50,7 @@ npm install -g typescript
 * Como padrao vamos criar um arquivo chamado index.ts, nele podemos passar nosso codigo typescript.
 
 * Em nosso terminal vamos entrar na pasta onde estamos trabalhando, e colocar um comando para o compilador do TS processar nosso codigo para javascript, nesse primeiro momentoele vai estar transformando em ES5, mais para frente vamos mudar isso.
-
+### compilando nosso arquivo TS PARA JS ###
 @exemplo
 ```bash
 tsc index.ts
