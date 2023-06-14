@@ -153,6 +153,8 @@ let itemId = <string>productName;
 const sum = (x: number, y: number): number | string => {
     return (x + y).toString()
 }
+
+const value = sum(2, 3);
 ```
 * Outro exemplo é o "void" quando a function não retorna nada o tipo do retorno é void(vazio)
 
@@ -160,5 +162,25 @@ const sum = (x: number, y: number): number | string => {
 ```bash
 const log = (message: string): void  => {
     console.log(message)
+}
+```
+# Usando Objetos #
+
+* Podemos pré-definir os tipos de nosso objeto criando um objeto unico que vai conter todos os tipos, alem de definir quais são opcionais usando o "?".
+
+* No exemplo abaixo criamos o objeto com os tipos com o nome de User e abaixo em uma const nosso objeto chamado user(não vai se confundir) mas ai atribuimos o User ao nosso objeto, precisamos passar os dois primeiros itens pois eles são obrigatorios já que só colocamos o "?" nos dois ultimos.
+
+@exemplo
+```bash
+type User = {
+    firstName: string;
+    age: number;
+    email?: string;
+    password?: number;
+}
+
+const user: User = {
+    firstName: 'Alexandre',
+    age: 20,
 }
 ```
