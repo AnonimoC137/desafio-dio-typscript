@@ -35,3 +35,33 @@ const sum = (num1: number, num2: number) {
 
 sum("2", "3"); // 23 Error 
 ```
+
+# Instalando o typescript #
+
+* podemos instalar ele de modo global para podermos ter acesso em todos os nossos projetos
+
+@exemplo
+```bash
+npm install -g typescript
+```
+
+# Criando o primeiro arquivo TS #
+
+* Como padrao vamos criar um arquivo chamado index.ts, nele podemos passar nosso codigo typescript.
+
+* Em nosso terminal vamos entrar na pasta onde estamos trabalhando, e colocar um comando para o compilador do TS processar nosso codigo para javascript, nesse primeiro momentoele vai estar transformando em ES5, mais para frente vamos mudar isso.
+
+@exemplo
+```bash
+tsc index.ts
+```
+* Apos isso vai ser criado um arquivo index.js com a versao do nosso codigo em javascript ES5.
+
+# Configurando o arquivo TS #
+
+* Para deixarmos nosso processo de codar em TS mais facil, vamos fazer algumas configurações, precisamos gerar esse arquivo atravez do terminal.
+
+@exemplo
+```bash
+tsc --init
+```
