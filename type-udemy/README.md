@@ -184,3 +184,25 @@ const user: User = {
     age: 20,
 }
 ```
+* Podemos usar tambem "type objetos" em conjunto, nesse caso vamos definir o orders como um "type objeto" de "Order" porem em lista, e dentro desse "type objeto" vamos ter propriedades com seus tipos, ai quando formos passar o "orders" dentro de nossa "const user", vamos passar como uma array e dentro dela um objeto com as propriedades definidas lá em "Order" como no exemplo abaixo:
+
+@exemplo
+```bash
+type Order = {
+  productId: string;
+  price: number;
+}
+type User = {
+    firstName: string;
+    age: number;
+    email?: string;
+    password?: number;
+    orders: Order[];
+}
+
+const user: User = {
+    firstName: 'Alexandre',
+    age: 20,
+    orders: [{productId: '1', price: 200}],
+}
+```
