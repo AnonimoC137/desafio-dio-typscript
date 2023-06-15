@@ -206,3 +206,27 @@ const user: User = {
     orders: [{productId: '1', price: 200}],
 }
 ```
+* Podemos usar tambem um metodo chamado "Unions" para usar mais de um "type objeto" em uma "const" ou "variavel" que criarmos, no exemplo a seguir vamos definir a "const author" como o "type objeto" de "Author" e de "User" usando o "&" para acrescentar os dois no exemplo abaixo: 
+
+@exemplo
+```bash
+type User = {
+    firstName: string;
+    age: number;
+    email?: string;
+    password?: number;
+    orders: Order[];
+}
+
+type Author = {
+  books: string[]
+}
+
+const author: Author & User = {
+  firstName: 'Alexandre',
+    age: 20,
+    orders: [{productId: '1', price: 200}],
+    books: ['livro1', 'livro2']
+}
+
+```
