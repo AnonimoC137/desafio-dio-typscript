@@ -226,7 +226,10 @@ const author: Author & User = {
   firstName: 'Alexandre',
     age: 20,
     orders: [{productId: '1', price: 200}],
-    books: ['livro1', 'livro2']
+    books: ['livro1', 'livro2'],
 }
 
 ```
+
+# Interfaces #
+
