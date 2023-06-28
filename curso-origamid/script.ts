@@ -6,10 +6,12 @@
 //Crie um User Type Guard, para verificar se o valor de localStorage é compativel com UserData.
 //Ao refresh da pagina, preencha os valores de localStorage (caso seja UserData)
 // no formulario e em window.UserData
-const form = document.querySelector<HTMLElement>('#form')
+const form = document.querySelector<HTMLElement>('#form');
+
 interface Window {
  UserData: any; 
 }
+
 window.UserData = {}
 
 interface UserData {
