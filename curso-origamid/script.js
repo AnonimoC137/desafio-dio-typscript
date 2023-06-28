@@ -8,10 +8,12 @@
 //Ao refresh da pagina, preencha os valores de localStorage (caso seja UserData)
 // no formulario e em window.UserData
 const form = document.querySelector('#form');
-function handleEvent({ event }) {
-    '';
+window.UserData = {};
+function handleEvent({ target }) {
+    if (target instanceof HTMLInputElement) {
+        window.UserData[target.id] = target.value;
+        localStorage.setItem('UserData', JSON.stringify(window.UserData));
+    }
 }
-if (form instanceof HTMLElement) {
-    form === null || form === void 0 ? void 0 : form.addEventListener('keyup', handleEvent);
-}
+form === null || form === void 0 ? void 0 : form.addEventListener('keyup', handleEvent);
 console.log(form);
