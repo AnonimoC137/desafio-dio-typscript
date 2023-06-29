@@ -50,4 +50,4 @@ function handleEvent({ target }) {
         localStorage.setItem('UserData', JSON.stringify(window.UserData));
     }
 }
-form === null || form === void 0 ? void 0 : form.addEventListener('keyup', handleEvent);
+form?.addEventListener('keyup', handleEvent);
