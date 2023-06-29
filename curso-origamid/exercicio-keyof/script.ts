@@ -33,10 +33,11 @@ async function handleData() {
     if( checkInterface<IJogo>(jogo, 'desenvolvedora')) {
         console.log(jogo);
     }
+    const livro = await fetchData('/livro.json');
+    if(checkInterface<ILivro>(jogo, 'nome')) {
+        console.log(livro);
+    }
     
-
-    const livro = await fetch('/livro.json');
-    console.log(jogo);
 
 }
 

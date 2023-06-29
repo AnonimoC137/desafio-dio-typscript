@@ -18,7 +18,9 @@ async function handleData() {
     if (checkInterface(jogo, 'desenvolvedora')) {
         console.log(jogo);
     }
-    const livro = await fetch('/livro.json');
-    console.log(jogo);
+    const livro = await fetchData('/livro.json');
+    if (checkInterface(jogo, 'nome')) {
+        console.log(livro);
+    }
 }
 handleData();
