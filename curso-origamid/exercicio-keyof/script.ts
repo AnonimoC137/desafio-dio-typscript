@@ -37,7 +37,7 @@ async function handleData() {
     if(checkInterface<ILivro>(jogo, 'nome')) {
         console.log(livro);
     }
-    
+     
 
 }
 
