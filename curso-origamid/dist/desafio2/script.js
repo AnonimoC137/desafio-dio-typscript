@@ -1,13 +1,11 @@
-"use strict";
-const button = document.querySelector('.btn');
-const p = document.querySelector(".p");
-function handleClick() {
-    if (p) {
-        const contador = 0;
-        p.innerHTML = (contador + 1).toString();
+import fetchData from "./fetchData.js";
+async function handleData1() {
+    const data = await fetchData('https://api.origamid.dev/json/transacoes.json');
+    if (data) {
+        data.forEach(item => {
+            console.log(item);
+        });
     }
 }
-if (button) {
-    button.addEventListener("click", handleClick);
-}
+handleData1();
 //# sourceMappingURL=script.js.map
