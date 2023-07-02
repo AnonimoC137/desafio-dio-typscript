@@ -7,6 +7,9 @@ export default async function fetchData(url) {
         return json;
     }
     catch (error) {
+        if (error instanceof Error) {
+            console.error('fetchData: ' + error.message);
+        }
         return null;
     }
 }
